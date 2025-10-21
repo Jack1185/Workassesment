@@ -1,0 +1,13 @@
+rule,timestamp,src_ip,summary,context
+Brute Force (failed logins),2025-07-03 10:00:07,203.0.113.5,3 failed logins within 15s from 203.0.113.5,count_in_window=3;user=admin
+SQL Injection (explicit),2025-07-03 10:00:10,10.0.0.22,SQL injection attempt flagged by source at 10.0.0.22,details=user_input=' OR 1=1--
+Brute Force (failed logins),2025-07-03 10:00:14,203.0.113.5,4 failed logins within 15s from 203.0.113.5,count_in_window=4;user=admin
+Unusual Access (explicit),2025-07-03 10:00:16,10.0.0.23,Unusual access reported by 10.0.0.23,resource=/etc/passwd
+Port Scan,2025-07-03 10:00:20,172.16.0.10,3 unique ports probed within 60s by 172.16.0.10,"unique_ports=22,443,80"
+SQL Injection (explicit),2025-07-03 10:00:27,10.0.0.24,SQL injection attempt flagged by source at 10.0.0.24,"details=user_input=' UNION SELECT NULL,NULL--"
+Unusual Access (explicit),2025-07-03 10:00:32,10.0.0.25,Unusual access reported by 10.0.0.25,resource=/var/log/auth.log
+Brute Force (failed logins),2025-07-03 10:00:35,203.0.113.8,3 failed logins within 15s from 203.0.113.8,count_in_window=3;user=guest
+SQL Injection (explicit),2025-07-03 10:00:41,10.0.0.26,SQL injection attempt flagged by source at 10.0.0.26,details=user_input=' SELECT * FROM users WHERE 1=1;--
+Unusual Access (explicit),2025-07-03 10:00:42,10.0.0.27,Unusual access reported by 10.0.0.27,resource=/root/.bashrc
+Port Scan,2025-07-03 10:00:45,172.16.0.13,3 unique ports probed within 60s by 172.16.0.13,"unique_ports=20,21,25"
+Brute Force (failed logins),2025-07-03 10:00:48,203.0.113.9,3 failed logins within 15s from 203.0.113.9,count_in_window=3;user=support

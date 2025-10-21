@@ -1,0 +1,114 @@
+[
+  {
+    "rule": "Brute Force (failed logins)",
+    "timestamp": "2025-07-03 10:00:07",
+    "src_ip": "203.0.113.5",
+    "summary": "3 failed logins within 15s from 203.0.113.5",
+    "context": {
+      "count_in_window": "3",
+      "user": "admin"
+    }
+  },
+  {
+    "rule": "SQL Injection (explicit)",
+    "timestamp": "2025-07-03 10:00:10",
+    "src_ip": "10.0.0.22",
+    "summary": "SQL injection attempt flagged by source at 10.0.0.22",
+    "context": {
+      "details": "user_input=' OR 1=1--"
+    }
+  },
+  {
+    "rule": "Brute Force (failed logins)",
+    "timestamp": "2025-07-03 10:00:14",
+    "src_ip": "203.0.113.5",
+    "summary": "4 failed logins within 15s from 203.0.113.5",
+    "context": {
+      "count_in_window": "4",
+      "user": "admin"
+    }
+  },
+  {
+    "rule": "Unusual Access (explicit)",
+    "timestamp": "2025-07-03 10:00:16",
+    "src_ip": "10.0.0.23",
+    "summary": "Unusual access reported by 10.0.0.23",
+    "context": {
+      "resource": "/etc/passwd"
+    }
+  },
+  {
+    "rule": "Port Scan",
+    "timestamp": "2025-07-03 10:00:20",
+    "src_ip": "172.16.0.10",
+    "summary": "3 unique ports probed within 60s by 172.16.0.10",
+    "context": {
+      "unique_ports": "22,443,80"
+    }
+  },
+  {
+    "rule": "SQL Injection (explicit)",
+    "timestamp": "2025-07-03 10:00:27",
+    "src_ip": "10.0.0.24",
+    "summary": "SQL injection attempt flagged by source at 10.0.0.24",
+    "context": {
+      "details": "user_input=' UNION SELECT NULL,NULL--"
+    }
+  },
+  {
+    "rule": "Unusual Access (explicit)",
+    "timestamp": "2025-07-03 10:00:32",
+    "src_ip": "10.0.0.25",
+    "summary": "Unusual access reported by 10.0.0.25",
+    "context": {
+      "resource": "/var/log/auth.log"
+    }
+  },
+  {
+    "rule": "Brute Force (failed logins)",
+    "timestamp": "2025-07-03 10:00:35",
+    "src_ip": "203.0.113.8",
+    "summary": "3 failed logins within 15s from 203.0.113.8",
+    "context": {
+      "count_in_window": "3",
+      "user": "guest"
+    }
+  },
+  {
+    "rule": "SQL Injection (explicit)",
+    "timestamp": "2025-07-03 10:00:41",
+    "src_ip": "10.0.0.26",
+    "summary": "SQL injection attempt flagged by source at 10.0.0.26",
+    "context": {
+      "details": "user_input=' SELECT * FROM users WHERE 1=1;--"
+    }
+  },
+  {
+    "rule": "Unusual Access (explicit)",
+    "timestamp": "2025-07-03 10:00:42",
+    "src_ip": "10.0.0.27",
+    "summary": "Unusual access reported by 10.0.0.27",
+    "context": {
+      "resource": "/root/.bashrc"
+    }
+  },
+  {
+    "rule": "Port Scan",
+    "timestamp": "2025-07-03 10:00:45",
+    "src_ip": "172.16.0.13",
+    "summary": "3 unique ports probed within 60s by 172.16.0.13",
+    "context": {
+      "unique_ports": "20,21,25"
+    }
+  },
+  {
+    "rule": "Brute Force (failed logins)",
+    "timestamp": "2025-07-03 10:00:48",
+    "src_ip": "203.0.113.9",
+    "summary": "3 failed logins within 15s from 203.0.113.9",
+    "context": {
+      "count_in_window": "3",
+      "user": "support"
+    }
+  }
+]
